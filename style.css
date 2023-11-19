@@ -71,6 +71,10 @@ body {
   gap: 20px;
 }
 
+.navbar__s4 {
+  display: none;
+}
+
 .catagories {
   display: flex;
   justify-content: space-around;
@@ -140,6 +144,9 @@ body {
 
 .course-card {
   width: 300px;
+  flex-basis: 20%;
+  flex-grow: 1;
+  margin: 5px;
 }
 
 .course-card img{
@@ -198,3 +205,32 @@ body {
   margin: 20px;
   align-items: center;
 }
+
+/* Media Queries */
+@media screen and (max-width:800px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .course-card {
+    width: 300px;
+    flex-basis: 40%;
+    flex-grow: 1;
+    margin: 5px;
+  }
+
+  .catagories {
+    display: none;
+  }
+
+  .navbar__s2,.navbar__s3 {
+    display: none;
+  }
+
+  .navbar__s4 {
+    display: block;
+  }
+}
+
